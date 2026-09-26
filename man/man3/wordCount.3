@@ -1,0 +1,22 @@
+.TH WORDCOUNT 3 "2024" "libmyutils" "User Library Functions"
+.SH NAME
+wordCount \- count lines, words and characters in a file
+.SH SYNOPSIS
+.B #include "myfilefunctions.h"
+.PP
+.B int wordCount(FILE *file, int *lines, int *words, int *chars);
+.SH DESCRIPTION
+The
+.B wordCount()
+function reads through the file stream pointed to by
+.IR file
+and counts the total number of lines, words and characters.
+Results are stored in the integers pointed to by
+.IR lines ,
+.IR words ,
+and
+.IR chars .
+.SH RETURN VALUE
+Returns 0 on success and -1 on failure.
+.SH AUTHOR
+Fatima Khan <your-email@example.com>
